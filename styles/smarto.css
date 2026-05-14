@@ -1,0 +1,34 @@
+.smarto-two-column-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 160px;
+}
+
+.smarto-two-column-content img {
+  width: 100%;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .smarto-two-column-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .smarto-two-column-content img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .smarto-two-column-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .smarto-two-column-content > * {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,79 @@
+.festwatch-rq1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.festwatch-rq1-insights {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.festwatch-rq2 {
+  display: flex;
+  align-items: center;
+}
+
+.festwatch-rq2 img {
+  border-radius: 0;
+}
+
+.festwatch-rq2-insights {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  height: max-content;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.festwatch-rq-tags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .festwatch-rq1-insights {
+    flex-wrap: wrap;
+  }
+
+  .festwatch-rq-tags {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .festwatch-rq1-insights {
+    flex-wrap: wrap;
+  }
+
+  .festwatch-rq-tags {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .festwatch-rq1-insights {
+    flex-wrap: wrap;
+  }
+
+  .festwatch-rq2 {
+    flex-direction: column;
+  }
+
+  .festwatch-rq2 img {
+    rotate: 90deg;
+  }
+
+  .festwatch-rq-tags {
+    flex-wrap: wrap;
+  }
+}

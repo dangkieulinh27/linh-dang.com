@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Archives &#8211; Linh Dang</title>
+    <link rel="icon" type="image/x-icon" href="images/linh-dang.com_favicon.jpg">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/landing-archives.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/qeu1eyt.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qeu1eyt.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header>
+      <nav class="header">
+        <div class="hello"><a href="index.html">Hi, I'm Linh Dang.</a></div>
+        <div class="menu">
+          <a href="index.html#project">Work</a>
+          <a href="archives.html">Archives</a>
+          <a href="index.html#info">Info</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- noting... -->
+      <section class="head">
+        <h1 class="head-positioning">Here’s a bit of other things across disciplines.</h1>
+      </section>
+
+      <section class="archives">
+        <a href="https://drive.google.com/file/d/1Vy-tg_LflCgiFZ3TYG2CbN-1Q-C__D5s/view?usp=sharing" target="_blank" class="archives1">
+          <div class="archives1-l">
+            <img src="images/archives_rix2.jpg">
+            <img src="images/archives_rix3.jpg">
+          </div>
+          <div class="archives2-r"><img src="images/archives_rix1.jpg"></div>
+          <div class="tooltip">Service Design</div>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1TQhCHSt5R-gA-otpCP-po6ZZHSmVkwEp/view?usp=sharing" target="_blank" class="archives2">
+          <div class="archives2-l"><img src="images/archives_wearecaring1.jpg"></div>
+          <div class="archives2-r">
+            <img src="images/archives_wearecaring2.jpg">
+            <img src="images/archives_wearecaring3.jpg">
+          </div>
+          <div class="tooltip">Information Design</div>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1YiXID4XuUe7Wa5J2vJijDodBtlub8-Lf/view?usp=sharing" target="_blank" class="archives1">
+          <div class="archives1-l">
+            <img src="images/archives_asummerfortheatre1.jpg">
+            <img src="images/archives_asummerfortheatre2.jpg">
+          </div>
+          <div class="archives1-r"><img src="images/archives_asummerfortheatre3.jpg"></div>
+          <div class="tooltip">Print</div>
+        </a>
+
+        <div style="cursor: auto;" class="archives2">
+          <div class="archives2-l"><img src="images/archives_danmien1.jpg"></div>
+          <div class="archives2-r">
+            <img src="images/archives_danmien2.jpg">
+            <img src="images/archives_danmien3.jpg">
+          </div>
+          <div class="tooltip">Brand Identity</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="cta">
+        <p>Feel free to reach out if you’d like to collaborate on:</p>
+        <h1>Visual Identity<br>User Experience<br>Service Design</h1>
+      </div>
+      <div class="contact">
+        <a href="index.html"><img src="images/linh-dang.com_symbol.png"></a>
+        <div class="menu">
+          <a href="https://www.linkedin.com/in/linhdk27/" target="_blank">LinkedIn</a>
+          <a href="mailto:hello@linh-dang.com" target="_blank">Email</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="scripts/header.js"></script>
+    <script>
+      document.querySelectorAll('.archives1, .archives2').forEach(el => {
+        const tooltip = el.querySelector('.tooltip');
+        el.addEventListener('mousemove', e => {
+          const rect = el.getBoundingClientRect();
+          tooltip.style.left = (e.clientX - rect.left) + 'px';
+          tooltip.style.top = (e.clientY - rect.top) + 'px';
+        });
+      });
+    </script>
+  </body>
+</html>

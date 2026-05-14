@@ -1,0 +1,215 @@
+.scapsense-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.scapsense-stats-l {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.scapsense-stats .one-column-content {
+  align-items: center;
+  justify-content: center;
+  padding: 100px 120px;
+  background-color: #2F2F2F;
+  color: white;
+  border-radius: 20px;
+}
+
+.scapsense-stats-row {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+}
+
+.scapsense-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 34px;
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+  width: 50%;
+}
+
+.scapsense-stat:hover {
+  background-color: #AC9BFA;
+  transition: background-color 0.4s ease-in-out;
+}
+
+
+
+.scapsense-learnings-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.scapsense-learnings {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+}
+
+.scapsense-learnings .one-column-content {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.scapsense-cha, .scapsense-opp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+}
+
+.scapsense-cha {
+  background-color: #FBFA84;
+}
+
+.scapsense-opp {
+  background-color: #AC9BFA;
+}
+
+.scapsense-learnings .tag, .scapsense-learnings .tag {
+  background-color: #2F2F2F;
+}
+
+
+
+.scapsense-concept {
+  display: flex;
+  gap: 16px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.scapsense-concept .one-column-content {
+  background-color: #AC9BFA;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .scapsense-stats-l {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scapsense-stats .one-column-content {
+    width: 100%;
+    padding: 120px;
+  }
+
+  .scapsense-stats-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scapsense-stat {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .scapsense-concept {
+    flex-wrap: wrap;
+  }
+
+  .scapsense-concept .one-column-content {
+    width: calc(50% - 8px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .scapsense-stats {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scapsense-stats-l {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scapsense-stats .one-column-content {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .scapsense-stats-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scapsense-stat {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .scapsense-learnings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scapsense-concept {
+    flex-wrap: wrap;
+  }
+
+  .scapsense-concept .one-column-content {
+    width: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 767px) {
+  .scapsense-stats {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scapsense-stats-l {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scapsense-stats .one-column-content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .scapsense-stats-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scapsense-stat {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .scapsense-learnings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scapsense-concept {
+    flex-direction: column;
+  }
+}

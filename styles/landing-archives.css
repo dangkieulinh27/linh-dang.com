@@ -1,0 +1,256 @@
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.head-positioning {
+  padding: 0px 240px;
+}
+
+
+
+.project {
+  padding: 0px 300px 260px 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+}
+
+.project-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.project img:hover,
+.project a:has(.project-tag:hover) img,
+.project a:has(h2:hover) img {
+  transform: scale(1.02);
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.info {
+  padding: 400px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 160px;
+  background-color: #231610;
+  min-height: 100dvh;
+}
+
+.info .one-column-content {
+  width: 96%;
+  color: white;
+}
+
+.info img {
+  width: 100%;
+  height: 400px;
+}
+
+
+
+.archives {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 30px;
+  padding: 0px 270px;
+}
+
+.archives img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  background-color: #231610;
+}
+
+.archives1, .archives2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.archives1:hover, .archives2:hover {
+  background-color: rgba(35, 22, 16, 0.14);
+  transition: background-color 0.4s ease-in-out;
+}
+
+.archives2 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.archives1-l, .archives2-r {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(35, 22, 16, 0.94);
+  color: white;
+  font-size: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 198;
+  opacity: 0;
+  transform: translate(12px, calc(-100% - 8px));
+}
+
+.archives1:hover .tooltip, .archives2:hover .tooltip {
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .head-positioning {
+    padding: 0px 220px;
+  }
+
+  .project {
+    padding: 0px 150px 240px 150px;
+  }
+
+  .info {
+    padding: auto 150px;
+  }
+
+  .info img {
+    height: 460px;
+  }
+
+  .archives {
+    padding: 0px 80px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .head-positioning {
+    padding: 0px 140px;
+  }
+
+  .project {
+    padding: 0px 100px 140px 100px;
+  }
+
+  .project-tag {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 4px;
+  }
+
+  .info {
+    padding: auto 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .info .one-column-content {
+    width: 60%;
+    text-align: center;
+  }
+
+  .info img {
+    width: 380px;
+    height: fit-content;
+  }
+
+  .archives {
+    padding: 0px 80px;
+    row-gap: 20px;
+  }
+
+  .archives1, .archives2 {
+    column-gap: 20px;
+    padding: 20px;
+  }
+
+  .archives1-l, .archives2-r {
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .head {
+    min-height: 50dvh;
+  }
+
+  .head-positioning {
+    padding: 0px 38px;
+  }
+
+  .project {
+    padding: 0px 30px 180px 30px;
+    gap: 60px;
+  }
+
+  .project-tag {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 4px;
+  }
+
+  .info {
+    padding: auto 30px;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .info .one-column-content {
+    width: 96%;
+    text-align: left;
+  }
+
+  .info img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .archives {
+    padding: 0px 30px 20px 30px;
+    grid-template-rows: auto;
+  }
+
+  .archives1,
+  .archives2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .archives1-l,
+  .archives2-r {
+    row-gap: 20px;
+  }
+}
