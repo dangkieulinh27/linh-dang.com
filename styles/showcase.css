@@ -261,38 +261,17 @@
   .carousel {
     padding: 16px 30px 30px 30px;
     min-width: 450px;
-    scroll-snap-type: x mandatory;
-  }
-
-  .carousel img {
-    scroll-snap-align: center;
   }
 
   .media-carousel {
-    display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: visible;
-    scrollbar-width: none;
     padding: 10px 30px 0px 30px;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .media-carousel:active {
-    cursor: none;
-  }
-
-  .media-carousel::-webkit-scrollbar {
-    display: none;
   }
 
   .media-carousel img {
     width: 100%;
-    position: relative;
-    -webkit-user-drag: none;
   }
 
   .two-column {
@@ -345,38 +324,17 @@
   .carousel {
     padding: 16px 30px 30px 30px;
     min-width: 450px;
-    scroll-snap-type: x mandatory;
-  }
-
-  .carousel img {
-    scroll-snap-align: center;
   }
 
   .media-carousel {
-    display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: visible;
-    scrollbar-width: none;
     padding: 10px 30px 0px 30px;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .media-carousel:active {
-    cursor: none;
-  }
-
-  .media-carousel::-webkit-scrollbar {
-    display: none;
   }
 
   .media-carousel img {
     width: 100%;
-    position: relative;
-    -webkit-user-drag: none;
   }
 
   .two-column {
