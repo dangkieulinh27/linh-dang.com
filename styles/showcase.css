@@ -261,6 +261,11 @@
   .carousel {
     padding: 16px 30px 30px 30px;
     min-width: 450px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel img {
+    scroll-snap-align: center;
   }
 
   .media-carousel {
