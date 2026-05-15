@@ -10,6 +10,20 @@
       e.preventDefault();
     });
 
-    
+    el.addEventListener('mouseleave', function () {
+      isDown = false;
+    });
+
+    el.addEventListener('mouseup', function () {
+      isDown = false;
+    });
+
+    el.addEventListener('mousemove', function (e) {
+      if (!isDown) return;
+      e.preventDefault();
+      var x = e.pageX - el.offsetLeft;
+      var walk = x - startX;
+      el.scrollLeft = scrollLeft - walk;
+    });
   });
 })();
