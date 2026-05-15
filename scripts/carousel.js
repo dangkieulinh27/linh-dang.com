@@ -10,12 +10,6 @@
       e.preventDefault();
     });
 
-    document.addEventListener('mouseup', function () { isDown = false; });
-
-    el.addEventListener('mousemove', function (e) {
-      if (!isDown) return;
-      e.preventDefault();
-      el.scrollLeft = scrollLeft - (e.pageX - el.offsetLeft - startX);
-    });
+    
   });
 })();
