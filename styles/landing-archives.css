@@ -125,7 +125,7 @@
 
 
 
-@media (min-width: 1200px) and (max-width: 1439px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
   .head-positioning {
     padding: 0px 220px;
   }
@@ -135,7 +135,7 @@
   }
 
   .info {
-    padding: auto 150px;
+    padding: 150px;
   }
 
   .info img {
@@ -148,7 +148,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .head-positioning {
     padding: 0px 140px;
   }
@@ -165,7 +165,7 @@
   }
 
   .info {
-    padding: auto 100px;
+    padding: 140px 200px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -173,12 +173,12 @@
   }
 
   .info .one-column-content {
-    width: 60%;
+    width: 100%;
     text-align: center;
   }
 
   .info img {
-    width: 380px;
+    width: 460px;
     height: fit-content;
   }
 
@@ -219,7 +219,65 @@
   }
 
   .info {
-    padding: auto 30px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .info .one-column-content {
+    width: 96%;
+    text-align: left;
+  }
+
+  .info img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .archives {
+    padding: 0px 30px 20px 30px;
+    grid-template-rows: auto;
+  }
+
+  .archives1,
+  .archives2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .archives1-l,
+  .archives2-r {
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .head {
+    min-height: 50dvh;
+  }
+
+  .head-positioning {
+    padding: 0px 38px;
+  }
+
+  .project {
+    padding: 0px 30px 180px 30px;
+    gap: 60px;
+  }
+
+  .project-tag {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 4px;
+  }
+
+  .info {
+    padding: 30px;
     flex-direction: column;
     align-items: normal;
     justify-content: center;

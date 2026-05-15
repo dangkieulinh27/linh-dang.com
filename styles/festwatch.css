@@ -40,7 +40,7 @@
 
 
 
-@media (min-width: 1200px) and (max-width: 1439px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
   .festwatch-rq1-insights {
     flex-wrap: wrap;
   }
@@ -50,7 +50,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .festwatch-rq1-insights {
     flex-wrap: wrap;
   }
@@ -61,6 +61,24 @@
 }
 
 @media (max-width: 767px) {
+  .festwatch-rq1-insights {
+    flex-wrap: wrap;
+  }
+
+  .festwatch-rq2 {
+    flex-direction: column;
+  }
+
+  .festwatch-rq2 img {
+    rotate: 90deg;
+  }
+
+  .festwatch-rq-tags {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 430px) {
   .festwatch-rq1-insights {
     flex-wrap: wrap;
   }
