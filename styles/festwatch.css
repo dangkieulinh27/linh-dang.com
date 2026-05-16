@@ -40,6 +40,12 @@
 
 
 
+@media (max-width: 1728px) {
+}
+
+@media (max-width: 1512px) {
+}
+
 @media (max-width: 1440px) {
   .festwatch-rq1-insights {
     flex-wrap: wrap;

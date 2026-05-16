@@ -124,6 +124,47 @@
 
 
 
+@media (max-width: 1728px) {
+  .head-positioning {
+    padding: 0px 210px;
+  }
+
+  .project {
+    padding: 0px 300px 240px 300px;
+  }
+
+  .info {
+    padding: 240px 300px;
+    gap: 130px;
+    min-height: 100dvh;
+  }
+
+  .info img {
+    width: 50%;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 1512px) {
+  .head-positioning {
+    padding: 0px 110px;
+  }
+
+  .project {
+    padding: 0px 300px 200px 300px;
+  }
+
+  .info {
+    padding: 200px 300px;
+    gap: 106px;
+  }
+
+  .info img {
+    width: 50%;
+    height: 480px;
+  }
+}
+
 @media (max-width: 1440px) {
   .head-positioning {
     padding: 0px 230px;

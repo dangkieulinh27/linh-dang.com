@@ -110,15 +110,12 @@
 
 
 
-@media (max-width: 1440px) {
-  .scapsense-stats .one-column-content {
-    padding: 100px;
-  }
+@media (max-width: 1728px) {
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1512px) {
   .scapsense-stats .one-column-content {
-    padding: 90px;
+    padding: 100px;
   }
 
   .scapsense-stats-row {
@@ -129,6 +126,15 @@
     padding: 20px;
     width: 100%;
   }
+}
+
+@media (max-width: 1440px) {
+  .scapsense-stats .one-column-content {
+    padding: 90px;
+  }
+}
+
+@media (max-width: 1280px) {
 }
 
 @media (max-width: 1152px) {

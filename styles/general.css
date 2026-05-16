@@ -164,6 +164,15 @@ button:hover {
 
 
 
+@media (max-width: 1728px) {
+}
+
+@media (max-width: 1512px) {
+  main {
+    padding: 0px 0px 260px 0px;
+  }
+}
+
 @media (max-width: 1440px) {
   main {
     padding: 0px 0px 280px 0px;

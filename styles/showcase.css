@@ -180,9 +180,19 @@
 
 
 
+@media (max-width: 1728px) {
+}
+
+@media (max-width: 1512px) {
+  .prelude {
+    padding: 60px 300px;
+    gap: 160px;
+  }
+}
+
 @media (max-width: 1440px) {
   .prelude {
-    padding: 60px 280px;
+    padding: 80px 280px;
     gap: 80px;
   }
 
