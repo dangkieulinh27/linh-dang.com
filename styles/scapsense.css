@@ -103,64 +103,55 @@
   width: 100%;
 }
 
+.scapsense-concept1 {
+  display: flex;
+  gap: 16px;
+}
 
 
-@media (min-width: 1281px) and (max-width: 1440px) {
-  .scapsense-stats-l {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
 
+@media (max-width: 1440px) {
   .scapsense-stats .one-column-content {
-    width: 100%;
-    padding: 120px;
+    padding: 100px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .scapsense-stats .one-column-content {
+    padding: 90px;
   }
 
   .scapsense-stats-row {
     flex-direction: column;
-    width: 100%;
   }
 
   .scapsense-stat {
+    padding: 20px;
     width: 100%;
-    padding: 30px;
-  }
-
-  .scapsense-concept {
-    flex-wrap: wrap;
-  }
-
-  .scapsense-concept .one-column-content {
-    width: calc(50% - 8px);
   }
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (max-width: 1152px) {
   .scapsense-stats {
     display: flex;
     flex-direction: column;
   }
   
   .scapsense-stats-l {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    }
 
   .scapsense-stats .one-column-content {
-    width: 100%;
-    padding: 30px;
-  }
-
-  .scapsense-stats-row {
-    flex-direction: column;
-    width: 100%;
+    padding: 20px;
   }
 
   .scapsense-stat {
-    width: 100%;
-    padding: 30px;
+    justify-content: start;
+    padding: 20px;
+    height: 160px;
   }
 
   .scapsense-learnings {
@@ -177,7 +168,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 820px) {
   .scapsense-stats {
     display: flex;
     flex-direction: column;
@@ -190,7 +181,6 @@
   }
 
   .scapsense-stats .one-column-content {
-    width: 100%;
     padding: 20px;
   }
 
@@ -200,7 +190,7 @@
   }
 
   .scapsense-stat {
-    width: 100%;
+    height: fit-content;
     padding: 20px;
   }
 
@@ -210,7 +200,43 @@
   }
 
   .scapsense-concept {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .scapsense-stats {
+    display: flex;
     flex-direction: column;
+  }
+  
+  .scapsense-stats-l {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scapsense-stats .one-column-content {
+    padding: 20px;
+  }
+
+  .scapsense-stats-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scapsense-stat {
+    height: fit-content;
+    padding: 20px;
+  }
+
+  .scapsense-learnings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scapsense-concept {
+    flex-wrap: wrap;
   }
 }
 
@@ -248,5 +274,13 @@
 
   .scapsense-concept {
     flex-direction: column;
+  }
+
+  .scapsense-concept1 {
+    flex-direction: column;
+  }
+
+  .scapsense-concept1 .one-column-content {
+    width: 100%;
   }
 }
