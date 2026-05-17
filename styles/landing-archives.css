@@ -12,7 +12,7 @@
 
 
 .project {
-  padding: 0px clamp(30px, 18vw, 300px) clamp(70px, 14vw, 260px);
+  padding: 0px clamp(30px, 18vw, 300px) clamp(70px, 16vw, 260px);
   display: flex;
   flex-direction: column;
   gap: clamp(50px, 6vw, 100px);
@@ -41,7 +41,7 @@
 
 
 .info {
-  padding: clamp(100px, 16vw, 300px) clamp(30px, 22vw, 400px);
+  padding: clamp(70px, 16vw, 260px) clamp(30px, 22vw, 400px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -133,7 +133,7 @@
 
 @media (max-width: 1728px) {
   .info {
-    padding: clamp(100px, 16vw, 300px) clamp(30px, 22vw, 300px);
+    padding: clamp(70px, 16vw, 260px) clamp(30px, 18vw, 300px);
     gap: clamp(100px, 12vw, 120px);
   }
 
@@ -144,7 +144,6 @@
 
 @media (max-width: 1512px) {
   .info {
-    padding: clamp(100px, 16vw, 300px) clamp(30px, 18vw, 300px);
     gap: clamp(60px, 12vw, 140px);
   }
 
@@ -155,7 +154,7 @@
 
 @media (max-width: 1440px) {
   .project {
-    padding: 0px clamp(30px, 18vw, 300px) clamp(70px, 14vw, 160px);
+    padding: 0px clamp(30px, 18vw, 300px) clamp(70px, 16vw, 160px);
   }
 
   .info {
@@ -165,11 +164,11 @@
 
 @media (max-width: 1280px) {
   .project {
-    padding: 0px clamp(30px, 18vw, 200px) clamp(70px, 14vw, 160px);
+    padding: 0px clamp(30px, 18vw, 200px) clamp(70px, 16vw, 160px);
   }
 
   .info {
-    padding: clamp(100px, 16vw, 300px) clamp(30px, 18vw, 200px);
+    padding: clamp(70px, 16vw, 260px) clamp(30px, 18vw, 200px);
     gap: clamp(60px, 12vw, 100px);
   }
 
@@ -184,14 +183,13 @@
   }
 
   .project {
-    padding: 0px clamp(30px, 18vw, 200px) clamp(70px, 14vw, 120px);
+    padding: 0px clamp(30px, 18vw, 200px) clamp(70px, 16vw, 120px);
   }
 
   .info {
-    padding: clamp(100px, 16vw, 300px) clamp(260px, 18vw, 300px);
+    padding: clamp(70px, 16vw, 260px) clamp(260px, 18vw, 300px);
     grid-template-columns: 1fr;
     gap: clamp(60px, 12vw, 80px);
-    min-height: none;
   }
 
   .info .one-column-content {
@@ -221,7 +219,7 @@
   }
 
   .info {
-    padding: clamp(100px, 16vw, 140px) clamp(30px, 18vw, 200px);
+    padding: clamp(70px, 16vw, 260px) clamp(30px, 18vw, 200px);
     gap: clamp(60px, 12vw, 80px);
   }
 }
@@ -236,7 +234,7 @@
   }
 
   .project {
-    padding: 0px clamp(30px, 18vw, 80px) clamp(70px, 14vw, 100px);
+    padding: 0px clamp(30px, 18vw, 80px) clamp(70px, 16vw, 100px);
   }
   
   .project-tag {
@@ -251,7 +249,7 @@
   }
 
   .info {
-    padding: clamp(100px, 16vw, 140px) clamp(30px, 18vw, 80px);
+    padding: clamp(70px, 16vw, 260px) clamp(30px, 18vw, 80px);
   }
 
   .archives {
@@ -265,11 +263,11 @@
   }
   
   .project {
-    padding: 0px clamp(30px, 18vw, 40px) clamp(70px, 14vw, 100px);
+    padding: 0px clamp(30px, 18vw, 40px) clamp(70px, 16vw, 100px);
   }
 
   .info {
-    padding: clamp(100px, 16vw, 140px) clamp(20px, 18vw, 40px);
+    padding: clamp(70px, 16vw, 260px) clamp(20px, 18vw, 40px);
   }
 
   .archives {
@@ -292,10 +290,10 @@
   }
 
   .project {
-    padding: 0px clamp(20px, 14vw, 30px) clamp(70px, 14vw, 100px);
+    padding: 0px clamp(20px, 14vw, 30px) clamp(70px, 16vw, 100px);
   }
 
   .info {
-    padding: clamp(100px, 16vw, 140px) clamp(20px, 14vw, 30px);
+    padding: clamp(70px, 16vw, 260px) clamp(20px, 14vw, 30px);
   }
 }
