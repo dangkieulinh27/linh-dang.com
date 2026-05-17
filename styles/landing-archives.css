@@ -189,6 +189,7 @@
     padding: clamp(70px, 16vw, 120px) clamp(260px, 18vw, 300px);
     grid-template-columns: 1fr;
     gap: clamp(60px, 12vw, 80px);
+    min-height: fit-content;
   }
 
   .info .one-column-content {
