@@ -99,6 +99,7 @@
 }
 
 .carousel img {
+  height: 100%;
   position: relative;
   -webkit-user-drag: none;
 }
