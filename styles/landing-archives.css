@@ -247,7 +247,7 @@
   }
 
   .info {
-    padding: clamp(70px, 16vw, 260px) clamp(30px, 18vw, 80px);
+    padding: clamp(70px, 16vw, 100px) clamp(30px, 18vw, 80px);
   }
 
   .archives {
@@ -265,7 +265,7 @@
   }
 
   .info {
-    padding: clamp(70px, 16vw, 260px) clamp(20px, 18vw, 40px);
+    padding: clamp(70px, 16vw, 100px) clamp(30px, 18vw, 40px);
   }
 
   .archives {
@@ -292,6 +292,6 @@
   }
 
   .info {
-    padding: clamp(70px, 16vw, 260px) clamp(20px, 14vw, 30px);
+    padding: clamp(70px, 16vw, 100px) clamp(20px, 14vw, 30px);
   }
 }
