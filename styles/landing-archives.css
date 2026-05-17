@@ -6,7 +6,7 @@
 }
 
 .head-positioning {
-  padding: 0px clamp(10px, 14vw, 240px);
+  padding: 0px clamp(10px, 14vw, 250px);
 }
 
 
@@ -42,22 +42,23 @@
 
 .info {
   padding: clamp(100px, 16vw, 300px) clamp(30px, 22vw, 400px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
   gap: clamp(60px, 12vw, 210px);
   background-color: #231610;
   min-height: 100dvh;
 }
 
 .info .one-column-content {
-  width: 100%;
+  max-width: 40ch;
   color: white;
+  align-self: center;
 }
 
 .info img {
   width: 100%;
-  height: clamp(380px, 30vw, 480px);
+  height: 100%;
 }
 
 
@@ -131,21 +132,13 @@
     gap: clamp(100px, 12vw, 120px);
   }
 
-  .info img {
-    width: 52%;
-    height: clamp(300px, 30vw, 400px);
-  }
+  
 }
 
 @media (max-width: 1512px) {
   .info {
     padding: clamp(100px, 16vw, 300px) clamp(30px, 18vw, 300px);
     gap: clamp(60px, 12vw, 140px);
-  }
-
-  .info img {
-    width: 48%;
-    height: clamp(380px, 30vw, 540px);
   }
 }
 
@@ -157,11 +150,6 @@
   .info {
     gap: clamp(60px, 12vw, 160px);
   }
-
-  .info img {
-    width: 42%;
-    height: clamp(380px, 30vw, 500px);
-  }
 }
 
 @media (max-width: 1280px) {
@@ -172,10 +160,6 @@
   .info {
     padding: clamp(100px, 16vw, 300px) clamp(30px, 18vw, 200px);
     gap: clamp(60px, 12vw, 100px);
-  }
-
-  .info img {
-    width: 40%;
   }
 
   .archives {
@@ -194,14 +178,9 @@
 
   .info {
     padding: clamp(100px, 16vw, 300px) clamp(260px, 18vw, 300px);
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: clamp(60px, 12vw, 80px);
     min-height: 20dvh;
-  }
-
-  .info img {
-    width: 100%;
-    height: clamp(380px, 30vw, 480px);
   }
 }
 
@@ -225,11 +204,6 @@
     padding: clamp(100px, 16vw, 140px) clamp(30px, 18vw, 200px);
     gap: clamp(60px, 12vw, 80px);
     min-height: none;
-  }
-
-  .info img {
-    width: 100%;
-    height: clamp(380px, 30vw, 480px);
   }
 }
 
