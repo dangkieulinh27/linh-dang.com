@@ -12,22 +12,15 @@
 
 @media (max-width: 1280px) {
   .smarto-two-column-content {
-    display: flex;
-    flex-direction: column;
     gap: clamp(30px, 10vw, 50px);
   }
-
-  .smarto-two-column-content img {
-    width: 60%;
-  }
 }
-
 
 @media (max-width: 1152px) {
   .smarto-two-column-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: clamp(20px, 2vw, 30px);
   }
 
   .smarto-two-column-content img {
@@ -42,20 +35,12 @@
 }
 
 @media (max-width: 768px) {
-  .smarto-two-column-content {
-    gap: 20px;
-  }
-
   .smarto-two-column-content img {
     width: min(400px, 100%);
   }
 }
 
 @media (max-width: 430px) {
-  .smarto-two-column-content {
-    gap: 20px;
-  }
-
   .smarto-two-column-content img {
     width: 100%;
   }
