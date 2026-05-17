@@ -47,7 +47,7 @@
   align-items: center;
   gap: clamp(60px, 12vw, 210px);
   background-color: #231610;
-  min-height: 10dvh;
+  min-height: 100dvh;
 }
 
 .info .one-column-content {
