@@ -44,21 +44,26 @@
   padding: clamp(100px, 16vw, 300px) clamp(30px, 22vw, 400px);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: stretch;
+  align-items: center;
   gap: clamp(60px, 12vw, 210px);
   background-color: #231610;
-  min-height: 100dvh;
+  min-height: 10dvh;
 }
 
 .info .one-column-content {
-  max-width: 40ch;
+  max-width: 44ch;
   color: white;
-  align-self: center;
+}
+
+.portrait {
+  position: relative;
+  aspect-ratio: 4 / 5;
 }
 
 .info img {
   width: 100%;
   height: 100%;
+  object-position: center top;
 }
 
 
@@ -132,13 +137,19 @@
     gap: clamp(100px, 12vw, 120px);
   }
 
-  
+  .portrait {
+    aspect-ratio: 1 / 1;
+  }
 }
 
 @media (max-width: 1512px) {
   .info {
     padding: clamp(100px, 16vw, 300px) clamp(30px, 18vw, 300px);
     gap: clamp(60px, 12vw, 140px);
+  }
+
+  .portrait {
+    aspect-ratio: 4 / 5;
   }
 }
 
@@ -180,7 +191,16 @@
     padding: clamp(100px, 16vw, 300px) clamp(260px, 18vw, 300px);
     grid-template-columns: 1fr;
     gap: clamp(60px, 12vw, 80px);
-    min-height: 20dvh;
+    min-height: none;
+  }
+
+  .info .one-column-content {
+    max-width: 60ch;
+    color: white;
+  }
+
+  .portrait {
+    aspect-ratio: auto;
   }
 }
 
@@ -203,7 +223,6 @@
   .info {
     padding: clamp(100px, 16vw, 140px) clamp(30px, 18vw, 200px);
     gap: clamp(60px, 12vw, 80px);
-    min-height: none;
   }
 }
 
@@ -231,6 +250,10 @@
     text-align: left;
   }
 
+  .info {
+    padding: clamp(100px, 16vw, 140px) clamp(30px, 18vw, 80px);
+  }
+
   .archives {
     padding: 0px clamp(30px, 16vw, 64px);
   }
@@ -246,7 +269,7 @@
   }
 
   .info {
-    padding: clamp(100px, 16vw, 140px) clamp(30px, 18vw, 40px);
+    padding: clamp(100px, 16vw, 140px) clamp(20px, 18vw, 40px);
   }
 
   .archives {
