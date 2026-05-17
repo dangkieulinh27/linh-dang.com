@@ -169,7 +169,6 @@
 
   .info {
     padding: clamp(70px, 16vw, 260px) clamp(30px, 18vw, 200px);
-    gap: clamp(60px, 12vw, 100px);
   }
 
   .archives {
@@ -220,7 +219,6 @@
 
   .info {
     padding: clamp(70px, 16vw, 260px) clamp(30px, 18vw, 200px);
-    gap: clamp(60px, 12vw, 80px);
   }
 }
 
