@@ -41,7 +41,7 @@
 
 
 .info {
-  padding: clamp(70px, 16vw, 260px) clamp(30px, 22vw, 400px);
+  padding: auto clamp(30px, 22vw, 400px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -140,7 +140,7 @@
   }
 
   .info {
-    padding: clamp(70px, 16vw, 260px) clamp(550px, 18vw, 700px);
+    padding: auto clamp(550px, 18vw, 700px);
   }
 
   .archives {
@@ -158,11 +158,15 @@
   .head-positioning {
     padding: 0px clamp(320px, 14vw, 380px);
   }
+
+  .portrait {
+    aspect-ratio: 4 / 3;
+  }
 }
 
 @media (max-width: 1728px) {
   .info {
-    padding: clamp(70px, 16vw, 260px) clamp(30px, 18vw, 300px);
+    padding: auto clamp(30px, 18vw, 300px);
     gap: clamp(100px, 12vw, 120px);
   }
 
@@ -197,7 +201,7 @@
   }
 
   .info {
-    padding: clamp(70px, 16vw, 160px) clamp(30px, 18vw, 200px);
+    padding: auto clamp(30px, 18vw, 200px);
   }
 
   .archives {
