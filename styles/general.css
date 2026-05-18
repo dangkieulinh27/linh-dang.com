@@ -21,8 +21,7 @@ section {
 .one-column-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  line-height: 24px;
+  gap: clamp(16px, 2vw, 20px);
 }
 
 .two-column-content {
@@ -74,12 +73,12 @@ h4 {
   font-family: "area-variable", sans-serif;
   font-weight: 750;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.8;
   text-wrap: pretty;
 }
 
 p {
-  line-height: 24px;
+  line-height: 1.8;
   text-wrap: pretty;
 }
 
@@ -91,14 +90,14 @@ li {
 .bullet-points {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  line-height: 1.8;
 }
 
 .bullet-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  line-height: 24px;
+  line-height: 1.8;
 }
 
 
@@ -143,6 +142,37 @@ a {
 
 
 
+@media (min-width: 1921px) and (max-width: 2560px) {
+  main {
+    padding: 0px 0px clamp(250px, 20vw, 350px) 0px;
+    gap: clamp(40px, 2.5vw, 60px);
+  }
+
+  section {
+    padding: 0px clamp(550px, 18vw, 700px);
+  }
+
+  body, h3, h4 {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: clamp(58px, 3vw, 66px);
+  }
+
+  h2 {
+    font-size: clamp(46px, 2.4vw, 52px);
+  }
+
+  .one-column-content {
+    gap: clamp(20px, 2vw, 26px);
+  }
+
+  .two-column-content {
+    gap: clamp(100px, 9vw, 170px);
+  }
+}
+
 @media (max-width: 1440px){
   .two-column-content {
     gap: clamp(30px, 10vw, 100px);
@@ -163,7 +193,7 @@ a {
   }
 }
 
-@media (max-width: 1152px) {
+@media (max-width: 1024px) {
   .two-column-content {
     display: flex;
     flex-direction: column;
@@ -175,10 +205,19 @@ a {
   section {
     padding: 0px clamp(30px, 18vw, 80px);
   }
+
+  h1, h2 {
+    font-size: clamp(26px, 3vw, 48px);
+  }
 }
 
 @media (max-width: 500px) {
   section {
     padding: 0px clamp(30px, 18vw, 40px);
+  }
+
+  h1, h2 {
+    font-size: clamp(24px, 3vw, 24px);
+    line-height: 1.2;
   }
 }

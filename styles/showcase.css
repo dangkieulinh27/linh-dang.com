@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   min-height: 100dvh;
 }
 
@@ -40,7 +40,7 @@
 .prelude-category, .prelude-story {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: clamp(16px, 2vw, 20px);
   width: 50%;
 }
 
@@ -75,12 +75,12 @@
   border-radius: 50px;
   min-width: max-content;
   max-width: max-content;
-  padding: 4px 12px 6px 12px;
+  padding: 4px 12px 6px;
 }
 
 .carousel {
   display: flex;
-  gap: 30px;
+  gap: clamp(20px, 2vw, 30px);
   height: clamp(320px, 40vw, 540px);
   overflow-x: auto;
   overflow-y: visible;
@@ -108,14 +108,13 @@
   transform: scale(1.035);
   transition: transform 0.4s ease-in-out;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-  z-index: 190;
 }
 
 
 
 .media-carousel {
   display: flex;
-  gap: 30px;
+  gap: clamp(20px, 2vw, 30px);
   width: 100%;
   overflow-x: auto;
   overflow-y: visible;
@@ -181,27 +180,63 @@
 
 
 
-@media (max-width: 1728px){
+@media (min-width: 1921px) and (max-width: 2560px) {
+  .prelude {
+    padding: clamp(40px, 5vw, 80px) clamp(550px, 18vw, 700px);
+    gap: clamp(100px, 9vw, 170px);
+  }
+
+  .prelude-category {
+    gap: clamp(20px, 2vw, 26px);
+  }
+
+  .tag {
+    padding: 4px 18px 6px;
+  }
+
+  .carousel {
+    padding: 18px clamp(550px, 18vw, 700px) clamp(24px, 5vw, 30px);
+    height: clamp(800px, 40vw, 900px);
+  }
+
+  .media-carousel {
+    padding: 10px clamp(550px, 18vw, 700px) 0px;
+  }
+
+  .media-carousel img, .media-link p {
+    width: clamp(640px, 24vw, 720px);
+  }
+
+  .container,
+  .carousel,
+  .media-carousel,
+  .two-column,
+  .two-row {
+    gap: clamp(36px, 2vw, 44px);
+  }
+}
+
+@media (max-width: 1728px) {
   .prelude {
     gap: clamp(40px, 9vw, 100px);
   }
 }
 
-@media (max-width: 1512px){
+@media (max-width: 1512px) {
   .prelude {
     padding: clamp(40px, 5vw, 80px) clamp(30px, 18vw, 300px);
     gap: clamp(30px, 10vw, 160px);
   }
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
   .prelude {
     padding: clamp(40px, 5vw, 80px) clamp(30px, 18vw, 300px);
     gap: clamp(30px, 10vw, 100px);
   }
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
   .prelude {
     padding: clamp(40px, 5vw, 80px) clamp(30px, 18vw, 200px);
     gap: clamp(30px, 10vw, 50px);
@@ -216,7 +251,7 @@
   }
 }
 
-@media (max-width: 1152px) {
+@media (max-width: 1024px) {
   .head-project {
     min-height: 50dvh;
   }
@@ -227,7 +262,6 @@
 
   .prelude {
     flex-direction: column;
-    gap: 40px;
   }
 
   .prelude-category,
@@ -272,6 +306,10 @@
 }
 
 @media (max-width: 500px) {
+  .head-project {
+    padding: clamp(70px, 4vw, 80px) clamp(30px, 18vw, 40px) 0px;
+  }
+
   .opening .youtube {
     height: fit-content;
   }
@@ -286,16 +324,11 @@
   }
 
   .media-carousel {
+    flex-direction: column;
     padding: 10px clamp(30px, 18vw, 40px) 0px;
   }
-}
 
-@media (max-width: 430px) {
-  .head-project {
-    padding: 60px clamp(20px, 4vw, 30px) 0px;
-  }
-
-  .media-carousel {
-    flex-direction: column;
+  .media-carousel img {
+    width: 100%;
   }
 }

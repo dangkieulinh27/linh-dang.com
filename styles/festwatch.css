@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   gap: clamp(10px, 5vw, 14px);
-  padding: 20px;
+  padding: clamp(20px, 7vw, 30px);
   width: 100%;
   height: max-content;
   background-color: white;
@@ -46,10 +46,18 @@
 
 
 
-@media (max-width: 1152px) {
+@media (max-width: 1024px) {
   .festwatch-rq1-insights {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .festwatch-rq2 {
+    flex-direction: column;
+  }
+
+  .festwatch-rq2 img {
+    rotate: 90deg;
   }
 }
 
@@ -60,21 +68,5 @@
 
   .festwatch-rq-tags {
     flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 768px) {
-  .festwatch-rq2 {
-    flex-direction: column;
-  }
-
-  .festwatch-rq2 img {
-    rotate: 90deg;
-  }
-}
-
-@media (max-width: 430px) {
-  .festwatch-rq2 {
-    flex-direction: column;
   }
 }

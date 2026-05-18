@@ -61,13 +61,31 @@ footer {
 }
 
 footer img {
-  width: clamp(90px, 7vw, 120px);
+  width: clamp(100px, 7vw, 120px);
   height: auto;
   border-radius: 0px;
   cursor: pointer;
 }
 
 
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+  .header {
+    padding: 50px clamp(550px, 18vw, 700px);
+  }
+
+  .menu {
+    gap: clamp(40px, 2.5vw, 50px);
+  }  
+
+  footer {
+    padding: clamp(260px, 20vw, 360px) clamp(550px, 18vw, 700px) clamp(200px, 10vw, 260px);
+  }
+
+  footer img {
+    width: clamp(170px, 7vw, 200px)
+  }
+}
 
 @media (max-width: 1728px) {
   footer {
@@ -91,10 +109,10 @@ footer img {
   }
 }
 
-@media (max-width: 1152px) {
+@media (max-width: 1024px) {
   footer {
-    padding: clamp(100px, 18vw, 200px) clamp(30px, 18vw, 200px) clamp(150px, 10vw, 180px);
-    min-height: 76dvh;
+    padding: clamp(100px, 18vw, 200px) clamp(30px, 18vw, 200px);
+    min-height: 70dvh;
   }
 }
 
@@ -110,12 +128,18 @@ footer img {
 
 @media (max-width: 500px) {
   .header {
+    flex-direction: column;
     padding: 30px clamp(20px, 18vw, 40px);
+    gap: clamp(18px, 2.5vw, 22px);
   }
 
   footer {
     padding: clamp(150px, 18vw, 200px) clamp(20px, 18vw, 40px);
     min-height: 70dvh;
+  }
+
+  .cta {
+    padding: 0px clamp(20px, 14vw, 50px) 120px;
   }
 
   .contact {
@@ -125,20 +149,5 @@ footer img {
 
   footer .menu {
     align-items: center;
-  }
-
-  footer img {
-    width: clamp(100px, 7vw, 120px)
-  }
-}
-
-@media (max-width: 430px) {
-  .header {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .cta {
-    padding: 0px clamp(20px, 14vw, 50px) 120px;
   }
 }
