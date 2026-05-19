@@ -31,7 +31,8 @@
 }
 
 .scapsense-stat:hover {
-  background-color: #AC9BFA;
+  background-color: #2F2F2F;
+  color: white;
   transition: background-color 0.4s ease-in-out;
 }
 
