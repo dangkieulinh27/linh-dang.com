@@ -134,7 +134,7 @@ iframe.loaded {
   filter: blur(0);
 }
 
-a {
+a, .link {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
