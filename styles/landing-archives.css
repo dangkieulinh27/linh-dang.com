@@ -51,7 +51,7 @@
 }
 
 .info .one-column-content {
-  max-width: 44ch;
+  max-width: 40ch;
   color: white;
 }
 
@@ -160,7 +160,7 @@
   }
 
   .portrait {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 7 / 6;
   }
 }
 
@@ -191,7 +191,11 @@
   }
 
   .info {
-    gap: clamp(60px, 16vw, 160px);
+    gap: clamp(60px, 16vw, 150px);
+  }
+
+  .portrait {
+    aspect-ratio: 3 / 4;
   }
 }
 
