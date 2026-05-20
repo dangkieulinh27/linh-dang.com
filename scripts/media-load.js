@@ -12,9 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
         el.addEventListener("error", markLoaded);
       }
     } else if (el.tagName === "VIDEO") {
-      if (el.readyState >= 3) {
+      if (el.readyState >= 1) {
         markLoaded();
       } else {
+        el.addEventListener("loadedmetadata", markLoaded);
         el.addEventListener("canplay", markLoaded);
         el.addEventListener("error", markLoaded);
       }
