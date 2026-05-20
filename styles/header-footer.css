@@ -37,6 +37,7 @@ header.header-hidden {
 
 footer {
   padding: clamp(130px, 16vw, 300px) clamp(30px, 18vw, 300px) clamp(120px, 10vw, 150px);
+  padding-bottom: calc(clamp(120px, 10vw, 150px) + env(safe-area-inset-bottom, 0px));
   background-color: #231610;
   color: white;
   display: flex;
@@ -112,6 +113,7 @@ footer img {
 @media (max-width: 1024px) {
   footer {
     padding: clamp(100px, 18vw, 200px) clamp(30px, 18vw, 200px);
+    padding-bottom: calc(clamp(100px, 18vw, 200px) + env(safe-area-inset-bottom, 0px));
     min-height: 70dvh;
   }
 }
@@ -123,6 +125,7 @@ footer img {
 
   footer {
     padding: clamp(150px, 18vw, 200px) clamp(30px, 18vw, 80px);
+    padding-bottom: calc(clamp(150px, 18vw, 200px) + env(safe-area-inset-bottom, 0px));
   }
 }
 
@@ -135,6 +138,7 @@ footer img {
 
   footer {
     padding: clamp(150px, 18vw, 200px) clamp(20px, 18vw, 40px);
+    padding-bottom: calc(clamp(150px, 18vw, 200px) + env(safe-area-inset-bottom, 0px));
     min-height: 70dvh;
   }
 
