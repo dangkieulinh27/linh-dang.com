@@ -30,7 +30,9 @@ header.header-hidden {
   justify-content: end;
 }
 
-.hello a:hover, .menu a:hover, .link:hover {
+.hello a:hover,
+.menu a:hover,
+.link:hover {
   opacity: 0.4;
   transition: opacity 0.4s ease-in-out;
 }

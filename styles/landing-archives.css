@@ -33,9 +33,9 @@
 .project img:hover,
 .project a:has(.project-tag:hover) img,
 .project a:has(h2:hover) img {
-  transform: scale(1.02);
+  transform: scale(1.03);
   transition: transform 0.4s ease-in-out;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -81,7 +81,8 @@
   background-color: #231610;
 }
 
-.archives1, .archives2 {
+.archives1,
+.archives2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: clamp(16px, 2vw, 30px);
@@ -91,7 +92,8 @@
   cursor: pointer;
 }
 
-.archives1:hover, .archives2:hover {
+.archives1:hover,
+.archives2:hover {
   background-color: rgba(35, 22, 16, 0.14);
   transition: background-color 0.4s ease-in-out;
 }
@@ -100,7 +102,8 @@
   grid-template-columns: 2fr 1fr;
 }
 
-.archives1-l, .archives2-r {
+.archives1-l,
+.archives2-r {
   display: flex;
   flex-direction: column;
   row-gap: clamp(20px, 2vw, 30px);
@@ -123,7 +126,8 @@
   transform: translate(12px, calc(-100% - 8px));
 }
 
-.archives1:hover .tooltip, .archives2:hover .tooltip {
+.archives1:hover .tooltip,
+.archives2:hover .tooltip {
   opacity: 1;
   transition: opacity 0.4s;
 }
@@ -284,11 +288,19 @@
 
 @media (max-width: 500px) {
   .head-positioning {
-    padding: 0px clamp(0px, 14vw, 140px);
+    padding: clamp(60px, 4vw, 80px) clamp(0px, 14vw, 140px) 0px;
   }
   
   .project {
     padding: 0px clamp(30px, 18vw, 40px) clamp(70px, 16vw, 100px);
+  }
+
+  .project img:hover,
+  .project a:has(.project-tag:hover) img,
+  .project a:has(h2:hover) img {
+    transform: none;
+    transition: none;
+    box-shadow: none;
   }
 
   .info {
@@ -306,6 +318,18 @@
     display: flex;
     flex-direction: column;
     gap: clamp(20px, 2vw, 30px);
+  }
+
+  .archives1:hover,
+  .archives2:hover {
+    background-color: inherit;
+    transition: none;
+  }
+
+  .archives1:hover .tooltip,
+  .archives2:hover .tooltip {
+    opacity: 0;
+    transition: none;
   }
 }
 

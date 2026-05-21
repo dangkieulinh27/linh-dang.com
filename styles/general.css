@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -124,7 +126,7 @@ iframe {
 img,
 video,
 iframe {
-  filter: blur(12px);
+  filter: blur(10px);
   transition: filter 0.4s ease-in-out;
 }
 
@@ -134,7 +136,8 @@ iframe.loaded {
   filter: blur(0);
 }
 
-a, .link {
+a,
+.link {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -152,7 +155,9 @@ a, .link {
     padding: 0px clamp(550px, 18vw, 700px);
   }
 
-  body, h3, h4 {
+  body,
+  h3,
+  h4 {
     font-size: 22px;
   }
 
@@ -206,7 +211,8 @@ a, .link {
     padding: 0px clamp(30px, 18vw, 80px);
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-size: clamp(26px, 3vw, 48px);
   }
 }
@@ -216,7 +222,8 @@ a, .link {
     padding: 0px clamp(30px, 18vw, 40px);
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-size: clamp(24px, 3vw, 24px);
     line-height: 1.2;
   }
