@@ -5,7 +5,7 @@ header {
   right: 0;
   z-index: 200;
   transform: translateY(0);
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.25s ease-in-out;
 }
 
 header.header-hidden {
@@ -18,6 +18,7 @@ header.header-hidden {
   justify-content: space-between;
   padding: 30px clamp(30px, 18vw, 300px);
   background-color: #F5F5F5;
+  animation: fade-up 0.4s ease-in-out forwards;
 }
 
 .hello {
@@ -30,11 +31,16 @@ header.header-hidden {
   justify-content: end;
 }
 
+.hello a,
+.menu a,
+.link {
+  transition: opacity 0.25s ease-in-out;
+}
+
 .hello a:hover,
 .menu a:hover,
 .link:hover {
   opacity: 0.4;
-  transition: opacity 0.4s ease-in-out;
 }
 
 footer {
@@ -82,7 +88,7 @@ footer img {
   }  
 
   footer {
-    padding: clamp(260px, 20vw, 360px) clamp(550px, 18vw, 700px) clamp(200px, 10vw, 260px);
+    padding: clamp(260px, 16vw, 360px) clamp(550px, 18vw, 700px) clamp(200px, 10vw, 260px);
   }
 
   footer img {
@@ -92,13 +98,13 @@ footer img {
 
 @media (max-width: 1728px) {
   footer {
-    padding: clamp(130px, 20vw, 300px) clamp(30px, 18vw, 300px) clamp(120px, 10vw, 150px);
+    padding: clamp(130px, 16vw, 300px) clamp(30px, 18vw, 300px) clamp(120px, 10vw, 150px);
   }
 }
 
 @media (max-width: 1440px) {
   footer {
-    padding: clamp(130px, 18vw, 300px) clamp(30px, 18vw, 300px) clamp(120px, 10vw, 150px);
+    padding: clamp(130px, 16vw, 300px) clamp(30px, 18vw, 300px) clamp(120px, 10vw, 150px);
   }
 }
 
@@ -114,8 +120,8 @@ footer img {
 
 @media (max-width: 1024px) {
   footer {
-    padding: clamp(100px, 18vw, 200px) clamp(30px, 18vw, 200px);
-    padding-bottom: calc(clamp(100px, 18vw, 200px) + env(safe-area-inset-bottom, 0px));
+    padding: clamp(100px, 16vw, 200px) clamp(30px, 18vw, 200px);
+    padding-bottom: calc(clamp(100px, 16vw, 200px) + env(safe-area-inset-bottom, 0px));
     min-height: 70dvh;
   }
 }
@@ -126,8 +132,15 @@ footer img {
   }
 
   footer {
-    padding: clamp(150px, 18vw, 200px) clamp(30px, 18vw, 80px);
-    padding-bottom: calc(clamp(150px, 18vw, 200px) + env(safe-area-inset-bottom, 0px));
+    padding: clamp(150px, 16vw, 200px) clamp(30px, 18vw, 80px);
+    padding-bottom: calc(clamp(150px, 16vw, 200px) + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header {
+    animation: none;
+    opacity: 1;
   }
 }
 
@@ -139,8 +152,8 @@ footer img {
   }
 
   footer {
-    padding: clamp(150px, 18vw, 200px) clamp(20px, 18vw, 40px);
-    padding-bottom: calc(clamp(150px, 18vw, 200px) + env(safe-area-inset-bottom, 0px));
+    padding: clamp(150px, 16vw, 200px) clamp(20px, 18vw, 40px);
+    padding-bottom: calc(clamp(150px, 16vw, 200px) + env(safe-area-inset-bottom, 0px));
     min-height: 70dvh;
   }
 

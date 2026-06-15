@@ -1,6 +1,6 @@
 (function () {
-  var rightSVG = "<svg xmlns='http://www.w3.org/2000/svg' width='56' height='auto' viewBox='0 0 153 142' fill='none'><path d='M79.196 137.532L142.128 74.5997M78.1353 3.53552L149.2 74.5997M144.25 70.4073H0' stroke='#231610' stroke-width='10'/></svg>";
-  var leftSVG = "<svg xmlns='http://www.w3.org/2000/svg' width='56' height='auto' viewBox='0 0 153 142' fill='none'><path d='M73.5389 137.532L10.6064 74.5997M74.5996 3.53552L3.53534 74.5997M8.48508 70.4073H152.735' stroke='#231610' stroke-width='10'/></svg>";
+  var rightSVG = "<svg xmlns='http://www.w3.org/2000/svg' width='56' height='auto' mix-blend-mode='difference' viewBox='0 0 153 142' fill='none'><path d='M79.196 137.532L142.128 74.5997M78.1353 3.53552L149.2 74.5997M144.25 70.4073H0' stroke='#231610' stroke-width='10'/></svg>";
+  var leftSVG = "<svg xmlns='http://www.w3.org/2000/svg' width='56' height='auto' mix-blend-mode='difference' viewBox='0 0 153 142' fill='none'><path d='M73.5389 137.532L10.6064 74.5997M74.5996 3.53552L3.53534 74.5997M8.48508 70.4073H152.735' stroke='#231610' stroke-width='10'/></svg>";
   var rightCursor = "url(\"data:image/svg+xml," + encodeURIComponent(rightSVG) + "\") 16 16, w-resize";
   var leftCursor = "url(\"data:image/svg+xml," + encodeURIComponent(leftSVG) + "\") 16 16, w-resize";
 
