@@ -6,7 +6,7 @@ header {
   background-color: (#f5f5f5, 0.6);
   mix-blend-mode: luminosity;
   backdrop-filter: blur(60px);
-  -webkit-mix-blend-mode: none;
+  -webkit-mix-blend-mode: normal;
   -webkit-backdrop-filter: blur(60px);
   z-index: 200;
   transform: translateY(0);
