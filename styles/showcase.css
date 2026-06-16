@@ -22,13 +22,7 @@
   animation: fade-up 0.4s ease-in-out 0.25s forwards;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .head-project h1,
-  .head-project p {
-    opacity: 1;
-    animation: none;
-  }
-}
+
 
 .opening {
   padding: 0;
