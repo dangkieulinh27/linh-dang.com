@@ -6,6 +6,7 @@ header {
   mix-blend-mode: luminosity;
   background-color: (inherit, 0.6);
   backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
   z-index: 200;
   transform: translateY(0);
   transition: transform 0.25s ease-in-out;
@@ -137,6 +138,7 @@ footer img {
   footer {
     padding: clamp(150px, 16vw, 200px) clamp(30px, 18vw, 80px);
     padding-bottom: calc(clamp(150px, 16vw, 200px) + env(safe-area-inset-bottom, 0px));
+    min-height: 70dvh;
   }
 }
 
