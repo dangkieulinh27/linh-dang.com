@@ -167,7 +167,7 @@ footer img {
   }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 800px) and (min-width: 1025px) {
   footer {
     min-height: fit-content;
     gap: clamp(200px, 18vh, 220px);
