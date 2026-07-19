@@ -348,3 +348,11 @@
     padding: clamp(100px, 16vw, 130px) clamp(20px, 14vw, 30px) 0px;
   }
 }
+
+@media (max-height: 800px) {
+  .info {
+    min-height: fit-content;
+    padding-top: clamp(200px, 18vh, 220px);
+    padding-bottom: clamp(200px, 18vh, 220px);
+  }
+}

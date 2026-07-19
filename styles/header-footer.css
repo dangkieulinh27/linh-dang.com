@@ -166,3 +166,10 @@ footer img {
     align-items: center;
   }
 }
+
+@media (max-height: 800px) {
+  footer {
+    min-height: fit-content;
+    gap: clamp(200px, 18vh, 220px);
+  }
+}
