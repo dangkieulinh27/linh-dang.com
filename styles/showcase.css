@@ -356,3 +356,10 @@
     box-shadow: none;
   }
 }
+
+@media (max-height: 900px) and (min-width: 1023px) {
+  .head-project {
+    padding-top: clamp(200px, calc(900px - 100vh), 220px);
+    padding-bottom: clamp(200px, calc(900px - 100vh), 220px);
+  }
+}

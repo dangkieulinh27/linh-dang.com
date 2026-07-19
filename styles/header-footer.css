@@ -167,9 +167,8 @@ footer img {
   }
 }
 
-@media (max-height: 800px) and (min-width: 1025px) {
+@media (max-height: 900px) and (min-width: 1023px) {
   footer {
-    min-height: fit-content;
-    gap: clamp(200px, 18vh, 220px);
+    gap: clamp(200px, calc(900px - 100vh), 220px);
   }
 }

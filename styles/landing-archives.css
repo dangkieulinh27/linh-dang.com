@@ -349,10 +349,14 @@
   }
 }
 
-@media (max-height: 800px) and (min-width: 1025px) {
+@media (max-height: 900px) and (min-width: 1023px) {
+  .head {
+    padding-top: clamp(200px, calc(900px - 100vh), 220px);
+    padding-bottom: clamp(200px, calc(900px - 100vh), 220px);
+  }
+
   .info {
-    min-height: fit-content;
-    padding-top: clamp(200px, 18vh, 220px);
-    padding-bottom: clamp(200px, 18vh, 220px);
+    padding-top: clamp(200px, calc(900px - 100vh), 220px);
+    padding-bottom: clamp(200px, calc(900px - 100vh), 220px);
   }
 }
